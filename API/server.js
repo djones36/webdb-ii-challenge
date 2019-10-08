@@ -7,6 +7,6 @@ server.use(express.json());
 
 server.use("/api/cars", carRoutes);
 
-server.use("/api, carsAPI");
+server.use("/api", carsAPI);
 
 module.exports = server;

@@ -19,7 +19,7 @@ exports.seed = function(knex) {
           model: "x-5",
           mileage: 190000,
           transmissionType: "automatic",
-          titleStatus: "clean"
+          titleStatus: "salvage"
         },
         {
           vin: "Vinumber155672389",
