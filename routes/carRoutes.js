@@ -16,12 +16,11 @@ router.get("/", (req, res) => {
 
 //Post 'Create'
 router.post("/", validatPost, (req, res) => {
-  const carData = req.body;
-  db("cars")
-    .insert(carData, "id")
-    .into("cars")
-    .then(ids => {
-      res.status(200).json(ids);
+  db("car")
+    .insert(req.body)
+    .into("car")
+    .then(newCar => {
+      res.status(201).json({ data: newCar });
     })
     .catch(err => {
       res.status(500).json(errorRef(err));
