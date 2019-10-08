@@ -6,7 +6,11 @@ module.exports = {
     connection: {
       filename: "./data/car_dealer.db3"
     },
-    useNullAsDefault: true
+    useNullAsDefault: true,
+    migrations: {
+      directory: "./data/migrations"
+    },
+    seeds: { directory: "./data/seeds" }
   },
 
   staging: {
@@ -21,9 +25,9 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: "knex_migrations"
+      directory: "./data/migrations"
     },
-    seeds: { directory: "./database/seeds" }
+    seeds: { directory: "./data/seeds" }
   },
 
   production: {
@@ -38,7 +42,8 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: "knex_migrations"
-    }
+      directory: "./data/migrations"
+    },
+    seeds: { directory: "./data/seeds" }
   }
 };

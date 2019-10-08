@@ -12,6 +12,22 @@ exports.seed = function(knex) {
           mileage: 100000,
           transmissionType: "manual",
           titleStatus: "clean"
+        },
+        {
+          vin: "vinumber145672389",
+          make: "bmw",
+          model: "x-5",
+          mileage: 190000,
+          transmissionType: "automatic",
+          titleStatus: "clean"
+        },
+        {
+          vin: "Vinumber155672389",
+          make: "BMW",
+          model: "x-3",
+          mileage: 000030,
+          transmissionType: "",
+          titleStatus: ""
         }
       ]);
     });
