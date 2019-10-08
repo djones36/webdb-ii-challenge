@@ -14,6 +14,7 @@ router.get("/", (req, res) => {
     });
 });
 
+//error middle ware for console log
 const errorRef = error => {
   const hash = Math.random()
     .toString(36)
