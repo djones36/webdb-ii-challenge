@@ -4,13 +4,13 @@ module.exports = {
   development: {
     client: "sqlite3",
     connection: {
-      filename: "./data/cars.db3"
+      filename: "./data/car_dealer.db3"
     },
     useNullAsDefault: true
   },
 
   staging: {
-    client: "pg",
+    client: "sqlite3",
     connection: {
       database: "my_db",
       user: "username",
@@ -26,7 +26,7 @@ module.exports = {
   },
 
   production: {
-    client: "pg",
+    client: "sqlite3",
     connection: {
       database: "my_db",
       user: "username",
